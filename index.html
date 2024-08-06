@@ -4,22 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery</title>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#chiefs-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#format-section">Формати</a></li>
+          <li><a class="link" href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
-      <h1>Сучасна пекарня</h1>
+      <button class="button" type="button">Замовити дзвінок</button>
+      <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
     </header>
     <main>
-      <section>
+      <section class="advantages-section">
+        <h2 class="section-title"></h2>
+        <ul class="advantages-list">
+          <li>Великий попит на ринку</li>
+          <li>Доступні за бюджетом формати</li>
+          <li>Досвідчена управлінська команда</li>
+        </ul>
+      </section>
+      <section id="traditions-section">
         <h2>Новий формат традицій</h2>
         <p>
           <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
@@ -32,8 +41,8 @@
         </p>
         <img src="./img/bakery-man.jpg" alt="Веселий пекар дивиться на хліб" />
       </section>
-      <section>
-        <h2>Наші найкращі <span>шеф -кухарі</span></h2>
+      <section id="chiefs-section">
+        <h2 class="section-title">Наші найкращі <span>шеф -кухарі</span></h2>
         <h3>Настя</h3>
         <p>Привіт, я Настя!</p>
         <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
@@ -46,41 +55,51 @@
         </p>
         <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
       </section>
-      <section><h2>Формати</h2></section>
-      <h3 lang="en">Walrus</h3>
-      <ul>
-        <li>Площа: до 120 м2</li>
-        <li>Меню: розширене меню</li>
-        <li>
-          Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-          офіціанти-різнороби
-        </li>
-        <li>Посадкові місця: є</li>
-      </ul>
-      <h3 lang="en">Horseshoe</h3>
-      <ul>
-        <li>Площа: до 25 м2</li>
-        <li>Меню: найпопулярніші позиції меню</li>
-        <li>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</li>
-        <li>Посадкові місця: відсутні</li>
-      </ul>
-      <h3 lang="en">Handlebar</h3>
-      <ul>
-        <li>Площа: до 15 м2</li>
-        <li>Посадкові місця: відсутні</li>
-        <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
-        <li>Меню: найпопулярніші позиції меню</li>
-      </ul>
-      <section>
-        <h2>
+      <section id="format-section">
+        <h2 class="section-title">Формати</h2>
+        <h3 lang="en">Walrus</h3>
+        <ul>
+          <li>Площа: до 120 м2</li>
+          <li>Меню: розширене меню</li>
+          <li>
+            Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+            офіціанти-різнороби
+          </li>
+          <li>Посадкові місця: є</li>
+        </ul>
+        <h3 lang="en">Horseshoe</h3>
+        <ul>
+          <li>Площа: до 25 м2</li>
+          <li>Меню: найпопулярніші позиції меню</li>
+          <li>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</li>
+          <li>Посадкові місця: відсутні</li>
+        </ul>
+        <h3 lang="en">Handlebar</h3>
+        <ul>
+          <li>Площа: до 15 м2</li>
+          <li>Посадкові місця: відсутні</li>
+          <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
+          <li>Меню: найпопулярніші позиції меню</li>
+        </ul>
+      </section>
+      <section id="contacts-section">
+        <h2 class="section-title">
           Приєднуйся до мережі пекарень Заповни форму, щоб ми звʼязались з
           тобою!
         </h2>
         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
         <p>Натискаючи на кнопку я погоджуюсь</p>
         <a href="#">з політикою конфіденційності</a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.164724367906!2d30.491251499999997!3d50.4566572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1722863952289!5m2!1suk!2sua"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
-      <section></section>
     </main>
     <footer>
       <ul>
@@ -113,7 +132,7 @@
         </ul>
       </address>
       <a href="#">Політика конфіденційності</a>
-      <p>© 2022 Дані захищені</p>
+      <p>&#169; 2022 Дані захищені</p>
     </footer>
     <script src="./js.js"></script>
   </body>
