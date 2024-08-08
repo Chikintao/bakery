@@ -1,3 +1,32 @@
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v21-latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v21-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v21-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/poppins-v21-latin-800.woff2") format("woff2");
+}
+
 :root {
   --primary-color-light: #faf4ea;
   --primary-color-dark: #31261a;
@@ -8,6 +37,12 @@ body {
   color: var(--primary-color-dark);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+address {
+  font-style: normal;
 }
 ul {
   list-style-type: none;
@@ -16,14 +51,20 @@ a {
   text-decoration: none;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* buttons */
 .button {
+  font-weight: 600;
+  font-size: inherit;
   width: 238px;
   height: 59px;
   padding: 16px 32px 16px 32px;
   background-color: var(--color-brand);
   border: 2px solid var(--color-brand);
   border-radius: 8px;
-  font-size: 18px;
   line-height: 1.5;
   color: var(--primary-color-light);
   cursor: pointer;
@@ -33,28 +74,70 @@ a {
   background-color: transparent;
   color: var(--color-brand-dark);
 }
-
+/* links */
 .link {
-  font-size: 18px;
   color: var(--primary-color-light);
 }
 .link:hover {
   color: var(--color-brand-light);
-}
 
-.hero-title {
-  color: var(--primary-color-light);
-  font-size: 128px;
+  font-weight: 600;
 }
 .section-title {
   font-size: 64px;
+  font-weight: 900;
 }
+/* hero */
+.hero-title {
+  color: var(--primary-color-light);
+  font-size: 128px;
+  letter-spacing: 4px;
+}
+
 .accent {
   color: var(--color-brand);
 }
+/* advantages */
 .advantages-section {
   background-color: var(--color-brand);
 }
-.advantages-list {
+.advantages-list span {
   color: var(--primary-color-light);
+}
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+/* traditions */
+.traditions-text .brand {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+/* chiefs */
+chiefs-tile {
+  font-size: 40px;
+  font-weight: 600;
+}
+/* format-title */
+.format-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.format-list li {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* adress */
+.address-link {
+  color: var(--primary-color-light);
+  font-size: 16px;
+  font-weight: 300x;
+  text-decoration: none;
+}
+.address-link:hover {
+  color: var(--color-brand-light);
+}
+.address-copyright {
+  font-size: 14px;
 }
