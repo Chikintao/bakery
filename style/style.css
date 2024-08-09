@@ -33,6 +33,19 @@
   --color-brand-light: #819b57;
   --color-brand-dark: #465929;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 body {
   color: var(--primary-color-dark);
   font-family: "Poppins", sans-serif;
@@ -54,7 +67,12 @@ a {
 .uppercase {
   text-transform: uppercase;
 }
-
+.container {
+  width: 100%;
+  max-width: 1288px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
 /* buttons */
 .button {
   font-weight: 600;
@@ -83,11 +101,18 @@ a {
 
   font-weight: 600;
 }
+.section {
+  padding: 48px 0;
+}
 .section-title {
   font-size: 64px;
   font-weight: 900;
 }
 /* hero */
+.hero-section {
+  padding: 272px 0;
+  text-align: center;
+}
 .hero-title {
   color: var(--primary-color-light);
   font-size: 128px;
@@ -99,7 +124,7 @@ a {
 }
 /* advantages */
 .advantages-section {
-  background-color: var(--color-brand);
+  background-color: var(--color-brand-light);
 }
 .advantages-list span {
   color: var(--primary-color-light);
@@ -109,16 +134,28 @@ a {
   font-weight: 300;
 }
 /* traditions */
+.traditions-section {
+  padding-top: 0;
+}
+.traditions-title {
+  mask-border: 42px;
+}
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
 }
 /* chiefs */
-chiefs-tile {
+.chiefs-title {
+  margin-bottom: 80px;
+}
+.chief-tile {
   font-size: 40px;
   font-weight: 600;
 }
 /* format-title */
+.formats-title {
+  margin-bottom: 80px;
+}
 .format-title {
   font-size: 24px;
   font-weight: 600;
@@ -127,7 +164,10 @@ chiefs-tile {
   font-size: 14px;
   font-weight: 300;
 }
-
+/* contact */
+.contacts-title {
+  margin-bottom: 16px;
+}
 /* adress */
 .address-link {
   color: var(--primary-color-light);
