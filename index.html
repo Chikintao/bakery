@@ -9,17 +9,21 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Наші традиції</a>
-            </li>
-            <li><a class="link" href="#chiefs-section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#format-section">Формати</a></li>
-            <li><a class="link" href="#contacts-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <div class="header-container">
+          <p>Logo</p>
+          <nav class="menu">
+            <ul class="menu-list">
+              <li>
+                <a class="link" href="#traditions-section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chiefs-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#format-section">Формати</a></li>
+              <li><a class="link" href="#contacts-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
+
         <div class="hero-section">
           <h1 class="hero-title">
             <span class="accent">Сучасна</span> пекарня
@@ -40,21 +44,27 @@
       </section>
       <section class="section traditions-section" id="traditions-section">
         <div class="container">
-          <h2 class="section-title traditions-title">Новий формат традицій</h2>
-          <p class="traditions-text">
-            <span class="brand uppercase">shop bakery</span> — це пекарня, яка
-            взяла все найкраще, і зберегла смак традиційної випічки та
-            натуральність інгредієнтів.
-          </p>
-          <p class="traditions-text">
-            Ми працюємо як найвідоміші мережі—
-            <span class="brand">5 хвилин і замовлення готове</span>. А ще у
-            наших пекарень стильний дизайн та висока якість обслуговування!
-          </p>
-          <img
-            src="./img/bakery-man.jpg"
-            alt="Веселий пекар дивиться на хліб"
-          />
+          <div class="traditions-container">
+            <div class="traditions-containert-text">
+              <h2 class="section-title traditions-title">
+                Новий формат традицій
+              </h2>
+              <p class="traditions-text">
+                <span class="brand uppercase">shop bakery</span> — це пекарня,
+                яка взяла все найкраще, і зберегла смак традиційної випічки та
+                натуральність інгредієнтів.
+              </p>
+              <p class="traditions-text">
+                Ми працюємо як найвідоміші мережі —
+                <span class="brand">5 хвилин і замовлення готове</span>. А ще у
+                наших пекарень стильний дизайн та висока якість обслуговування!
+              </p>
+            </div>
+            <img
+              src="./img/bakery-man.jpg"
+              alt="Веселий пекар дивиться на хліб"
+            />
+          </div>
         </div>
       </section>
       <section class="section" id="chiefs-section">
@@ -78,29 +88,43 @@
       <section class="section" id="format-section">
         <div class="container">
           <h2 class="section-title formats-title">Формати</h2>
-          <h3 class="format-title" lang="en">Walrus</h3>
           <ul class="format-list">
-            <li>Площа: до 120 м2</li>
-            <li>Меню: розширене меню</li>
-            <li>
-              Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-              офіціанти-різнороби
+            <li class="format-card">
+              <article>
+                <h3 class="format-title" lang="en">Walrus</h3>
+                <ul>
+                  <li>Площа: до 120 м2</li>
+                  <li>Меню: розширене меню</li>
+                  <li>
+                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                    офіціанти-різнороби
+                  </li>
+                  <li>Посадкові місця: є</li>
+                </ul>
+              </article>
             </li>
-            <li>Посадкові місця: є</li>
-          </ul>
-          <h3 class="format-title" lang="en">Horseshoe</h3>
-          <ul class="format-list">
-            <li>Площа: до 25 м2</li>
-            <li>Меню: найпопулярніші позиції меню</li>
-            <li>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</li>
-            <li>Посадкові місця: відсутні</li>
-          </ul>
-          <h3 class="format-title" lang="en">Handlebar</h3>
-          <ul class="format-list">
-            <li>Площа: до 15 м2</li>
-            <li>Посадкові місця: відсутні</li>
-            <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
-            <li>Меню: найпопулярніші позиції меню</li>
+            <li class="format-card">
+              <article>
+                <h3 class="format-title" lang="en">Horseshoe</h3>
+                <ul>
+                  <li>Площа: до 25 м2</li>
+                  <li>Меню: найпопулярніші позиції меню</li>
+                  <li>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</li>
+                  <li>Посадкові місця: відсутні</li>
+                </ul>
+              </article>
+            </li>
+            <li class="format-card">
+              <article>
+                <h3 class="format-title" lang="en">Handlebar</h3>
+                <ul>
+                  <li>Площа: до 15 м2</li>
+                  <li>Посадкові місця: відсутні</li>
+                  <li>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</li>
+                  <li>Меню: найпопулярніші позиції меню</li>
+                </ul>
+              </article>
+            </li>
           </ul>
         </div>
       </section>
@@ -169,6 +193,5 @@
         <p class="address-copyright">&#169; 2022 Дані захищені</p>
       </div>
     </footer>
-    <script src="./js.js"></script>
   </body>
 </html>
