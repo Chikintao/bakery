@@ -1,6 +1,7 @@
 :root {
   --primary-color-light: #faf4ea;
   --primary-color-dark: #31261a;
+  --color-secondary-dark: #a18268;
   --color-brand-light: #819b57;
   --color-brand-dark: #465929;
 }
@@ -53,6 +54,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  background: var(--primary-color-light);
 }
 address {
   font-style: normal;
@@ -63,7 +65,9 @@ ul {
 a {
   text-decoration: none;
 }
-
+.accent {
+  color: var(--color-brand-light);
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -127,6 +131,10 @@ a {
 .hero-section {
   padding: 272px 0;
   text-align: center;
+  background-image: url("../img/hero-section-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   color: var(--primary-color-light);
@@ -134,9 +142,6 @@ a {
   letter-spacing: 4px;
 }
 
-.accent {
-  color: var(--color-brand);
-}
 /* advantages */
 .advantages-section {
   background-color: var(--color-brand-light);
@@ -181,11 +186,32 @@ a {
 }
 /* chiefs */
 .chiefs-title {
+  width: 540px;
   margin-bottom: 80px;
+  margin: 0 auto;
+  text-align: center;
 }
+.chiefs-title::before {
+  content: " ";
+  display: block;
+  width: 352px;
+  border: 2px solid var(--primary-color-light);
+}
+.chiefs-title::after {
+  content: " ";
+  display: block;
+  width: 352px;
+  border: 2px solid var(--primary-color-light);
+}
+
 .chief-tile {
   font-size: 40px;
   font-weight: 600;
+}
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--primary-color-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
 }
 /* format */
 .formats-title {
@@ -202,17 +228,32 @@ a {
   flex-wrap: wrap;
 }
 .format-card {
+  height: 444px;
   font-size: 14px;
   font-weight: 300;
   border: 1px solid gray;
   border-radius: 16px;
   flex-basis: calc((100% - 40px) / 3);
   padding: 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
 }
 
 /* contact */
 .contacts-title {
   margin-bottom: 16px;
+}
+/* footer */
+.footer {
+  background-color: var(--primary-color-dark);
+  background-image: url("../img/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 /* adress */
 .address-link {
