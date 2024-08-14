@@ -98,6 +98,19 @@
                   <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
                 </div>
               </aricle>
+              <aricle class="chef-card">
+                <img class="chef-photo" src="./img/vlad-chef.jpg" alt="" />
+                <div class="chefs-text">
+                  <h3 class="chief-tile">Влад</h3>
+                  <p>Привіт, я Влад!</p>
+                  <p>
+                    Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша
+                    любов, з якою ми ділимось кожен раз з Вами через нашу
+                    випічку!
+                  </p>
+                  <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                </div>
+              </aricle>
             </li>
           </ul>
         </div>
@@ -159,37 +172,42 @@
           </div>
         </div>
       </section>
-      <section class="section" id="contacts-section">
+      <section class="section contact-section" id="contacts-section">
         <div class="container">
-          <h2 class="section-title contacts-title">
-            Приєднуйся до мережі пекарень Заповни форму, щоб ми звʼязались з
-            тобою!
-          </h2>
-          <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-          <p>Натискаючи на кнопку я погоджуюсь</p>
-          <a href="#">з політикою конфіденційності</a>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.164724367906!2d30.491251499999997!3d50.4566572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1722863952289!5m2!1suk!2sua"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="section-title contacts-title">
+                Приєднуйся до мережі пекарень
+              </h2>
+              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <p>Натискаючи на кнопку я погоджуюсь</p>
+              <a href="#">з політикою конфіденційності</a>
+            </div>
+            <iframe
+              class="contract-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.164724367906!2d30.491251499999997!3d50.4566572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1722863952289!5m2!1suk!2sua"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <ul>
+      <div class="container footer-container">
+        <div class="footer-logo">
+          <a href=""><img src="./img/logo.svg" alt="Лого Пекарні" /></a>
+        </div>
+        <ul class="footer-menu">
           <li><a class="link" href="#">Франшиза</a></li>
           <li><a class="link" href="#">Наші традиції</a></li>
           <li><a class="link" href="#">Формати</a></li>
           <li><a class="link" href="#">Контакти</a></li>
         </ul>
-        <address>
-          <ul>
+        <address class="footer-address">
+          <ul class="footer-address__list">
             <li>
               <a class="address-link" href="tel:+380960000007"
                 >+ 38 (096) 000 00 07</a
@@ -208,6 +226,8 @@
                 >Україна, м. Київ, вул. Січових Стрільців 54
               </a>
             </li>
+          </ul>
+          <ul class="address-social">
             <li>
               <a href="#">
                 <svg class="address-icon" width="32" height="32">
@@ -224,8 +244,10 @@
             </li>
           </ul>
         </address>
-        <a class="address-link" href="#">Політика конфіденційності</a>
-        <p class="address-copyright">&#169; 2022 Дані захищені</p>
+        <div class="footer-copyright">
+          <a class="address-link" href="#">Політика конфіденційності</a>
+          <p class="address-copyright">&#169; 2022 Дані захищені</p>
+        </div>
       </div>
     </footer>
   </body>

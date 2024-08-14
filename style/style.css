@@ -5,7 +5,9 @@
   --color-brand-light: #819b57;
   --color-brand-dark: #465929;
 }
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -218,6 +220,7 @@ a {
 .chef-card {
   display: flex;
   gap: 30px;
+  margin-bottom: 36px;
 }
 .chefs-text h2,
 .chefs-text p {
@@ -285,8 +288,24 @@ a {
 }
 
 /* contact */
+.contact-section {
+  padding-bottom: 96px;
+}
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+.contact-form {
+  flex-basis: 625px;
+}
 .contacts-title {
   margin-bottom: 16px;
+}
+.contract-map {
+  flex-shrink: 1;
+  border-radius: 16px;
+  width: 600px;
+  height: 600px;
 }
 /* footer */
 .footer {
@@ -296,22 +315,45 @@ a {
   background-size: cover;
   background-position: center;
 }
+.footer-container {
+  padding: 32px 10px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 /* adress */
 .address-link {
   color: var(--primary-color-light);
   font-size: 16px;
-  font-weight: 300x;
+  font-weight: 300;
   text-decoration: none;
+  margin-bottom: 10px;
+}
+.footer-address__list li {
+  margin-bottom: 10px;
+}
+a.address-link {
+  margin-bottom: 10px;
 }
 .address-link:hover {
   color: var(--color-brand-light);
 }
 .address-copyright {
   font-size: 14px;
+  color: var(--color-secondary-dark);
 }
 .address-icon {
   fill: var(--primary-color-light);
 }
 .address-icon:hover {
   fill: var(--color-brand-light);
+}
+.address-copyright {
+  margin-top: 10px;
+}
+.address-social {
+  display: flex;
+  gap: 10px;
 }
