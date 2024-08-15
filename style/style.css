@@ -110,6 +110,7 @@ a {
 /* links */
 .link {
   color: var(--primary-color-light);
+  transition: color 0.3s;
 }
 .link:hover {
   color: var(--color-brand-light);
@@ -123,6 +124,13 @@ a {
 }
 
 /* header */
+.header-section {
+  padding-top: 32px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -133,10 +141,16 @@ a {
 .hero-section {
   padding: 272px 0;
   text-align: center;
-  background-image: url("../img/hero-section-background.jpg");
-  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url("../img/hero-section-background.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero-title {
   color: var(--primary-color-light);
@@ -267,6 +281,11 @@ a {
     rgba(49, 38, 26, 0.71) 72.92%,
     #31261a 100%
   );
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.format-card:hover {
+  transform: scale(1.05);
 }
 .carousel-button {
   background-color: transparent;
@@ -288,7 +307,9 @@ a {
 .carousel-button:hover .carousel-arrow {
   fill: var(--primary-color-light);
 }
-
+.carousel-button-next {
+  transform: rotate(180deg);
+}
 /* contact */
 .contact-section {
   padding-bottom: 96px;
@@ -316,7 +337,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 .footer-container {
   padding: 32px 10px;
@@ -324,6 +344,7 @@ a {
   gap: 24px;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
 }
 
 /* adress */
@@ -361,20 +382,20 @@ a.address-link {
   gap: 20px;
 }
 
-.footer::before,
-.footer::after {
+.footer-container::before,
+.footer-container::after {
   position: absolute;
   content: " ";
   bottom: 0;
   background-repeat: no-repeat;
 }
 
-.footer::before {
+.footer-container::before {
   width: 180px;
   height: 120px;
   background-image: url("../img/decor-bread-small.png");
 }
-.footer::after {
+.footer-container::after {
   width: 380px;
   height: 190px;
   background-image: url("../img/decor-bread-large.png");
@@ -383,6 +404,7 @@ a.address-link {
 
 /* modal window */
 .backdrop {
+  padding: 20px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -392,10 +414,13 @@ a.address-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 .modal {
-  width: 880px;
-  height: 880px;
+  max-width: 880px;
+  width: 100%;
+  height: 100%;
+  max-height: 880px;
   background-color: var(--primary-color-light);
   border-radius: 32px;
   position: relative;
