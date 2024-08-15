@@ -169,8 +169,10 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <p>Натискаючи на кнопку я погоджуюсь</p>
-              <a href="#">з політикою конфіденційності</a>
+              <p class="modal-text">Натискаючи на кнопку я погоджуюсь</p>
+              <a href="#" class="link-copyright"
+                >з політикою конфіденційності</a
+              >
             </div>
             <iframe
               class="contract-map"
@@ -240,7 +242,54 @@
       </div>
     </footer>
     <div class="backdrop is-hidden">
-      <div class="modal"><button class="modal-btn-close">close</button></div>
+      <div class="modal">
+        <button class="modal-btn-close">close</button>
+        <h2>Замовити Дзвінок</h2>
+        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form
+          class="form-section"
+          action="#"
+          name="contact-form"
+          autocomplete="off"
+          novalidate
+        >
+          <div class="form-field">
+            <label class="form-label" for="user-name">Імя</label>
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="user-tel">Телефон</label>
+            <input
+              class="form-input"
+              type="text"
+              id="user-tel"
+              name="user-tel"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="user-email">Електронна пошта</label>
+            <input
+              class="form-input"
+              type="text"
+              id="user-email"
+              name="user-tel"
+            />
+          </div>
+
+          <button class="button form-btn" type="button">
+            Замовити дзвінок
+          </button>
+        </form>
+        <p class="modal-text">Натискаючи на кнопку я погоджуюсь</p>
+        <a href="#" class="link-copyright">з політикою конфіденційності</a>
+      </div>
     </div>
 
     <script src="./js/modal.js"></script>
