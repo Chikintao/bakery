@@ -1,0 +1,26 @@
+/* traditions */
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.traditions-containert-text {
+  max-width: 710px;
+}
+.traditions-section {
+  padding-top: 96px;
+}
+.traditions-title {
+  line-height: 1.5;
+  margin-bottom: 42px;
+}
+.traditions-text {
+  margin-bottom: 24px;
+}
+.traditions-text .brand {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+.traditions-text:last-child {
+  max-width: 325px;
+}

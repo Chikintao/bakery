@@ -1,0 +1,36 @@
+.form-section {
+  padding-top: 32px;
+}
+.form-field {
+  position: relative;
+  margin-bottom: 32px;
+}
+.form-label {
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 32px;
+  font-size: 16px;
+  line-height: 1.17;
+  transition: transform 0.3s;
+}
+.form-field:focus-within .form-label {
+  transform: translate(-36px, -40px);
+  color: var(--color-brand-dark);
+}
+
+.form-input {
+  color: var(--color-secondary-dark);
+  padding: 16px 42px;
+  width: 100%;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+.form-input:focus {
+  border-color: var(--color-secondary-dark);
+  outline: none;
+}
+.form-btn {
+  margin-bottom: 12px;
+}

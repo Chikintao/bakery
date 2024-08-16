@@ -1,0 +1,47 @@
+/* chiefs */
+.chiefs-title {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  text-align: center;
+  position: relative;
+}
+.chiefs-title::before,
+.chiefs-title::after {
+  content: " ";
+  width: 352px;
+  border: 2px solid var(--color-secondary-dark);
+  position: absolute;
+  bottom: 24px;
+}
+.chiefs-title::before {
+  left: 0;
+}
+.chiefs-title::after {
+  right: 0;
+}
+
+.chief-tile {
+  font-size: 40px;
+  font-weight: 600;
+}
+.chiefs-list {
+  display: flex;
+  gap: 30px;
+}
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+.chef-card {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 36px;
+}
+.chefs-text h2,
+.chefs-text p {
+  margin-bottom: 18px;
+}
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--primary-color-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
+}

@@ -1,0 +1,21 @@
+/* contact */
+.contact-section {
+  padding-bottom: 96px;
+}
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+.contact-form {
+  flex-basis: 625px;
+  text-align: center;
+}
+.contacts-title {
+  margin-bottom: 16px;
+}
+.contract-map {
+  flex-shrink: 1;
+  border-radius: 16px;
+  width: 600px;
+  height: 600px;
+}
